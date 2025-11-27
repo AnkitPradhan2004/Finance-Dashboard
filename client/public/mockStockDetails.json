@@ -1,0 +1,57 @@
+{
+  "RELIANCE.NS": {
+    "symbol": "RELIANCE.NS",
+    "companyName": "Reliance Industries Limited",
+    "currentPrice": "2478.50",
+    "dayHigh": "2490.00",
+    "dayLow": "2440.00",
+    "week52High": "2640.00",
+    "week52Low": "1845.00",
+    "marketCap": "1,73,000 Cr",
+    "volume": "9,200,000"
+  },
+  "TCS.NS": {
+    "symbol": "TCS.NS",
+    "companyName": "Tata Consultancy Services Ltd",
+    "currentPrice": "3400.25",
+    "dayHigh": "3425.00",
+    "dayLow": "3370.00",
+    "week52High": "3950.00",
+    "week52Low": "2900.00",
+    "marketCap": "12,00,000 Cr",
+    "volume": "1,100,000"
+  },
+  "INFY.NS": {
+    "symbol": "INFY.NS",
+    "companyName": "Infosys Limited",
+    "currentPrice": "1740.80",
+    "dayHigh": "1765.00",
+    "dayLow": "1720.50",
+    "week52High": "1910.00",
+    "week52Low": "1480.00",
+    "marketCap": "6,50,000 Cr",
+    "volume": "3,500,000"
+  },
+  "HDFCBANK.NS": {
+    "symbol": "HDFCBANK.NS",
+    "companyName": "HDFC Bank Ltd",
+    "currentPrice": "1620.60",
+    "dayHigh": "1638.00",
+    "dayLow": "1600.00",
+    "week52High": "1750.00",
+    "week52Low": "1170.00",
+    "marketCap": "8,50,000 Cr",
+    "volume": "2,200,000"
+  },
+  "ICICIBANK.NS": {
+    "symbol": "ICICIBANK.NS",
+    "companyName": "ICICI Bank Ltd",
+    "currentPrice": "920.45",
+    "dayHigh": "932.00",
+    "dayLow": "908.00",
+    "week52High": "1015.00",
+    "week52Low": "680.00",
+    "marketCap": "4,90,000 Cr",
+    "volume": "4,300,000"
+  }
+}
