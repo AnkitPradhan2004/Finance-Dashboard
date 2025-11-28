@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import StockDetails from './pages/StockDetails'
 
@@ -44,7 +45,7 @@ function App() {
             {/* Main Navigation */}
             <nav className="header-nav desktop-nav" role="navigation" aria-label="Main navigation">
               <Link to="/" className="nav-link" aria-label="Go to Home">Home</Link>
-              <Link to="/" className="nav-link" aria-label="Go to Dashboard">Dashboard</Link>
+              <Link to="/dashboard" className="nav-link" aria-label="Go to Dashboard">Dashboard</Link>
             </nav>
             
             {/* User Profile Section */}
@@ -62,7 +63,7 @@ function App() {
                 <div className="mobile-menu">
                   <div className="mobile-user-name">Ankit Kumar Pradhan</div>
                   <Link to="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
-                  <Link to="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Dashboard</Link>
+                  <Link to="/dashboard" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Dashboard</Link>
                   <div className="mobile-nav-link logout" onClick={() => setIsMenuOpen(false)}>Logout</div>
                 </div>
               )}
@@ -73,7 +74,8 @@ function App() {
         {/* Main Content Area */}
         <main role="main">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/stocks/:symbol" element={<StockDetails />} />
           </Routes>
         </main>

@@ -100,7 +100,7 @@ export default function StockDetails() {
         <div className="no-results">
           <h3>Stock Not Found</h3>
           <p>The stock symbol "{symbol}" was not found.</p>
-          <button onClick={() => navigate('/')} style={{marginTop: '20px', padding: '10px 20px', background: '#3b82f6', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer'}}>
+          <button onClick={() => navigate('/dashboard')} style={{marginTop: '20px', padding: '10px 20px', background: '#3b82f6', color: 'white', border: 'none', borderRadius: '8px', cursor: 'pointer'}}>
             Back to Dashboard
           </button>
         </div>
@@ -117,7 +117,7 @@ export default function StockDetails() {
     <div className="dashboard-container">
       <div className="stock-details">
         {/* Back Navigation Button */}
-        <button onClick={() => navigate('/')} className="back-button-inline">
+        <button onClick={() => navigate('/dashboard')} className="back-button-inline">
           ← Back
         </button>
         
