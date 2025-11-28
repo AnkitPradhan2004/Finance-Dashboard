@@ -11,7 +11,7 @@ export default function StockCard({ stock }) {
   
   return (
     <Link to={`/stocks/${stock.symbol}`}>
-      <div className="stock-card">
+      <div className={`stock-card ${isPositive ? 'profit-card' : 'loss-card'}`}>
         <div className="stock-header">
           <img 
             src={stock.logo} 
