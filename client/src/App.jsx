@@ -44,8 +44,20 @@ function App() {
             
             {/* Main Navigation */}
             <nav className="header-nav desktop-nav" role="navigation" aria-label="Main navigation">
-              <Link to="/" className="nav-link" aria-label="Go to Home">Home</Link>
-              <Link to="/dashboard" className="nav-link" aria-label="Go to Dashboard">Dashboard</Link>
+              <Link to="/" className="nav-link" aria-label="Go to Home">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9,22 9,12 15,12 15,22"/>
+                </svg>
+                Home
+              </Link>
+              <Link to="/dashboard" className="nav-link" aria-label="Go to Dashboard">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                  <path d="m22 12-10-10v10z"/>
+                </svg>
+                Dashboard
+              </Link>
             </nav>
             
             {/* User Profile Section */}
@@ -62,9 +74,28 @@ function App() {
               {isMenuOpen && (
                 <div className="mobile-menu">
                   <div className="mobile-user-name">Ankit Kumar Pradhan</div>
-                  <Link to="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
-                  <Link to="/dashboard" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>Dashboard</Link>
-                  <div className="mobile-nav-link logout" onClick={() => setIsMenuOpen(false)}>Logout</div>
+                  <Link to="/" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                      <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                    Home
+                  </Link>
+                  <Link to="/dashboard" className="mobile-nav-link" onClick={() => setIsMenuOpen(false)}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                      <path d="m22 12-10-10v10z"/>
+                    </svg>
+                    Dashboard
+                  </Link>
+                  <div className="mobile-nav-link logout" onClick={() => setIsMenuOpen(false)}>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                      <polyline points="16,17 21,12 16,7"/>
+                      <line x1="21" y1="12" x2="9" y2="12"/>
+                    </svg>
+                    Logout
+                  </div>
                 </div>
               )}
             </div>

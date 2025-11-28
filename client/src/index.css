@@ -63,6 +63,9 @@
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-link:hover {
@@ -127,7 +130,9 @@
 }
 
 .mobile-nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: #aaaaaa;
   text-decoration: none;
   padding: 8px 0;
