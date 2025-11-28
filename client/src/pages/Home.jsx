@@ -20,9 +20,12 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-title-container">
             <img 
-              src="https://cdn-icons-png.flaticon.com/512/825/825454.png" 
+              src="https://static.vecteezy.com/system/resources/previews/009/663/927/original/gold-coin-icon-3d-render-illustration-free-png.png" 
               alt="Gold Coin" 
               className="gold-coin-image"
+              onError={(e) => {
+                e.target.src = 'https://cdn-icons-png.flaticon.com/512/1611/1611179.png'
+              }}
             />
             <h1 className="hero-title">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="hero-icon">

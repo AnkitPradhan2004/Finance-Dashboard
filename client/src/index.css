@@ -2042,14 +2042,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   margin-bottom: 20px;
 }
 
 .gold-coin-image {
-  width: 80px;
-  height: 80px;
-  filter: drop-shadow(0 4px 8px rgba(255, 215, 0, 0.4));
+  width: 100px;
+  height: 100px;
+  filter: brightness(0) invert(1) drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
+  background: transparent;
 }
 
 .hero-title {
@@ -2061,11 +2062,6 @@ html {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.crypto-coin {
-  margin-right: 8px;
-  filter: drop-shadow(0 2px 4px rgba(255, 215, 0, 0.3));
 }
 
 .hero-icon {
@@ -2351,16 +2347,6 @@ html {
 }
 
 @media (max-width: 768px) {
-  .hero-title-container {
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .gold-coin-image {
-    width: 60px;
-    height: 60px;
-  }
-  
   .hero-title {
     font-size: 32px;
     flex-direction: column;
@@ -2393,11 +2379,6 @@ html {
 @media (max-width: 480px) {
   .hero-section {
     padding: 60px 20px;
-  }
-  
-  .gold-coin-image {
-    width: 50px;
-    height: 50px;
   }
   
   .hero-title {
