@@ -441,9 +441,25 @@ html {
 }
 
 .stock-card-link {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
   display: block;
+}
+
+.stock-card a,
+.stock-card a:hover,
+.stock-card a:visited,
+.stock-card a:active {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.bottom-cards-section a,
+.bottom-cards-section a:hover,
+.bottom-cards-section a:visited,
+.bottom-cards-section a:active {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .stock-card {
