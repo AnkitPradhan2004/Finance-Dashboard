@@ -2178,6 +2178,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
 }
 
 .feature-card:hover {
