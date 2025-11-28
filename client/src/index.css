@@ -228,6 +228,12 @@ html {
   max-width: 100%;
 }
 
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .dashboard-main {
+    height: calc(45vh + 5px);
+  }
+}
+
 .dashboard-left {
   display: flex;
   flex-direction: column;
