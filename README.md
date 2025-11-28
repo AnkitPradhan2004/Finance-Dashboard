@@ -1,111 +1,154 @@
-# 📈 Stock Dashboard - NIFTY50 Tracker
+📈 Stock Dashboard - NIFTY50 Tracker
 
-A modern, responsive stock market dashboard built with React for tracking NIFTY50 stocks with real-time data visualization and analytics.
+A modern and responsive stock dashboard built with React.
+This project uses mock data to display NIFTY50 stock information, charts, and UI components for demo and learning purposes.
 
-## 🚀 Features
+🚀 Features
+Core Functionality
+Home page :Show the overview and motive of the app.
+Mock Stock Data: All stock prices and market details are shown using mock JSON data.
 
-### Core Functionality
-- **Real-time Stock Data**: Live NIFTY50 stock prices and market data
-- **Interactive Dashboard**: Clean, modern interface with metric cards and charts
-- **Stock Search**: Real-time search with debounced filtering
-- **Detailed Stock View**: Individual stock pages with comprehensive analytics
-- **Responsive Design**: Mobile-first approach with breakpoints at 1000px, 768px, and 480px
+Interactive Dashboard: Clean layout with metric cards and small charts.
 
-### UI/UX Features
-- **Glass Morphism Design**: Modern translucent cards with backdrop blur effects
-- **Smooth Animations**: Hover effects, transitions, and loading animations
-- **News Slider**: Auto-rotating news with scroll-left animation (3-second intervals)
-- **AI Chatbot**: Floating chat widget with stock advice options
-- **Color-coded Metrics**: Green/red indicators for profit/loss with visual borders
+Search Stock: Real-time search using debounced filtering.
 
-### Technical Features
-- **SEO Optimized**: Meta tags, JSON-LD structured data, and accessibility features
-- **Performance**: Debounced search, memoized filtering, and optimized rendering
-- **Navigation**: React Router with dynamic routing and back navigation
-- **Data Management**: Custom hooks for state management and API integration
+Stock Details Page: Individual stock info (from mock data).
 
-## 🛠️ Tech Stack
+Fully Responsive: Breakpoints at 1000px, 768px, and 480px.
 
-- **Frontend**: React 18 with Hooks
-- **Routing**: React Router DOM v6
-- **Styling**: Pure CSS with CSS Grid and Flexbox
-- **Charts**: Custom SVG-based stock charts
-- **Icons**: Custom SVG icons and components
-- **Build Tool**: Vite for fast development and building
+🎨 UI / UX Features
 
-## 📱 Responsive Breakpoints
+Glassmorphism Design (blurred cards, gradient background)
 
-- **Desktop**: > 1000px - Full grid layout with 5-column stock cards
-- **Tablet**: 768px - 1000px - 4-column layout with adjusted spacing
-- **Mobile**: < 768px - Single column layout with hamburger menu
-- **Small Mobile**: < 480px - Optimized for small screens
+Smooth Animations (hover effects, transitions)
 
-## 🎨 Design System
+News Slider (auto-scroll using mock headlines)
 
-### Color Palette
-- **Primary Background**: Linear gradients (#0D0907 to #212122)
-- **Profit Indicators**: Green (#10b981) with borders and backgrounds
-- **Loss Indicators**: Red (#ef4444) with borders and backgrounds
-- **Accent Colors**: Purple (#a855f7), Blue (#3b82f6), Yellow (#fbbf24)
-- **Chat Theme**: Ocean Green (#009688) for AI chatbot
+AI Chatbot UI (static UI for design preview)
 
-### Typography
-- **Font Family**: Inter, system fonts fallback
-- **Headings**: 900 weight for emphasis
-- **Body Text**: 500-600 weight for readability
-- **Metric Labels**: Uppercase with letter spacing
+Colour-coded Metrics for gain/loss
 
-## 📊 Key Components
+🛠️ Technical Features
 
-1. **Dashboard**: Main landing page with metrics and stock table
-2. **StockDetails**: Individual stock analysis page
-3. **StockTable**: Sortable table with sticky columns
-4. **StockCard**: Animated cards with hover effects
-5. **NewsSlider**: Auto-rotating news component
-6. **AIChatbot**: Floating chat widget
-7. **SearchBar**: Real-time search with debouncing
+Mock Data Source: All values (price, percentage, charts, news) are mock-generated.
 
-## 🔧 Installation & Setup
+React Router for navigation
 
-```bash
+Custom hooks for search and filtering
+
+Optimised Rendering using React.memo & debounce
+
+Vite for fast build and development
+
+🧰 Tech Stack
+
+React 18 (Hooks)
+
+React Router DOM v6
+
+Pure CSS (Flexbox + Grid)
+
+Vite
+
+Custom SVG icons
+
+Mock JSON files instead of APIs
+
+📱 Responsive Breakpoints
+
+Desktop (>1000px) → 5-column stock grid
+
+Tablet (768px–1000px) → 3–4 column layout
+
+Mobile (<768px) → Single column
+
+Small Mobile (<480px) → Fully simplified layout
+
+🎨 Design System
+Colors
+
+Background: #0D0907 → #212122 gradient
+
+Profit: #10b981
+
+Loss: #ef4444
+
+Accent Purple: #a855f7
+
+Accent Blue: #3b82f6
+
+Accent Yellow: #fbbf24
+
+Typography
+
+Font: Inter
+
+Heading weight: 900
+
+Body: 500–600
+
+Labels: uppercase with tight spacing
+
+📊 Key Components
+
+Dashboard – main page using mock stock data
+
+StockDetails – shows data of a single mock stock
+
+StockTable – sortable list (mock rows)
+
+StockCard – animated cards
+
+NewsSlider – rotates mock news items
+
+AIChatbot – static UI widget
+
+SearchBar – debounced search
+
+🔧 Installation & Setup
 # Clone the repository
-git clone [repository-url]
+git clone https://github.com/AnkitPradhan2004/Finance-Dashboard
 
-# Navigate to project directory
-cd client1/client
+cd client
 
-# Install dependencies
 npm install
 
-# Start development server
-npm run dev
+npm run dev      # Start development
+npm run build    # Production build
 
-# Build for production
-npm run build
-```
+📈 Performance Features
 
-## 📈 Performance Features
+Debounced search (300ms)
 
-- **Debounced Search**: 300ms delay to prevent excessive filtering
-- **Memoized Components**: React.memo for expensive calculations
-- **Lazy Loading**: Dynamic imports for code splitting
-- **Optimized Images**: Placeholder fallbacks for missing logos
-- **Efficient Animations**: CSS transforms
+Memoized components
 
-## 🌐 SEO & Accessibility
+Lazy-loaded routes
 
-- **Meta Tags**: Dynamic title and description updates
-- **Open Graph**: Social media sharing optimization
-- **JSON-LD**: Structured data for search engines
-- **ARIA Labels**: Screen reader accessibility
-- **Semantic HTML**: Proper heading hierarchy and landmarks
+Optimised images and placeholders
 
-## 📱 Mobile Features
+Smooth CSS animations
 
-- **Touch-friendly**: Large tap targets and swipe gestures
-- **Hamburger Menu**: Collapsible navigation for mobile
-- **Responsive Tables**: Horizontal scroll with sticky columns
-- **Optimized Layout**: Single-column design for small screens
+🌐 SEO & Accessibility
+
+(SEO is basic here because the project uses mock data)
+
+Proper meta tags
+
+Semantic HTML
+
+ARIA labels
+
+Clean heading structure
+
+📱 Mobile Features
+
+Touch-friendly UI
+
+Hamburger menu
+
+Horizontal scrollable tables
+
+Single-column layout for easy reading
 <img width="1895" height="875" alt="Screenshot 2025-11-28 083836" src="https://github.com/user-attachments/assets/c8b3b896-6741-4793-b2d3-09fd91f47e9a" />
 <img width="1894" height="875" alt="Screenshot 2025-11-28 083859" src="https://github.com/user-attachments/assets/b56fe0b4-d658-4193-873b-c2be957736ca" />
 <img width="1894" height="875" alt="Screenshot 2025-11-28 083912" src="https://github.com/user-attachments/assets/b174ee91-df91-420f-a91e-dedc46c31ba0" />
