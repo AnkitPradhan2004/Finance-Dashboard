@@ -24,7 +24,7 @@ const NewsSlider = () => {
     <>
       <div className="news-slider-container">
         <h4 className="news-title">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{marginRight: '8px', verticalAlign: 'middle'}}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2" style={{marginRight: '8px', verticalAlign: 'middle'}}>
             <path d="M3 3v18h18"/>
             <path d="m19 9-5 5-4-4-3 3"/>
           </svg>

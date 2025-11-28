@@ -648,6 +648,29 @@ html {
 }
 
 /* ===== STOCK CARDS ===== */
+.cards-section-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cards-section-title {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.bell-icon {
+  color: #fbbf24;
+}
+
 .bottom-cards-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
